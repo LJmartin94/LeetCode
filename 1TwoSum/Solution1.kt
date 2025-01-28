@@ -3,11 +3,11 @@ class Solution {
         //easy way to solve -> sort collection by smallest to largest, compare first and last
 
         // Save initial order
-        val original = nums.copyOf()
+        val original = nums.copyOf() //expensive
 
         // Sort collection
-        nums.sort()
-        println("Original indexes: ${original.joinToString()}")
+        nums.sort() //expensive
+        println("Original input: ${original.joinToString()}")
         println("Sorted input: ${nums.joinToString()}")
 
         //compare first (i) and last (j) index
